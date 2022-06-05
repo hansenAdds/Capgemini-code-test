@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+
+<body>
+
+    <h1 style="color: #5e9ca0;"><strong>Applicant: Longy Zhang</strong></h1>
+    <h2 style="color: #2e6c80;">A little bit about me&nbsp;</h2>
+    
+     <li><span style="font-weight: 400;">Experienced GIS software developer and data technician, impeccable work ethic, and strong learning skills in the Web development, Data Analysis, and GIS areas.</span></li>
+    <li>Ready to reshape my career to data analysis and web development direction in the IT industry</li>
+    </ul>
+    <h2 style="color: #2e6c80;">Some useful features:</h2>
+    <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+    <li style="clear: both;"><img style="float: left;" src="https://usersnap.com/blog/wp-content/uploads/2016/08/click-me-button-flat.png?x18216" alt="interactive connection" width="100" onclick='window.location.assign("http://127.0.0.1:5000/resume")' /> Go to my Resume</li>
+    </ol>
+
+    <div style="width: 600px;height: 600px;margin: left;">
+        <form action="/" method="get" >
+            <div>
+                <label for="data">Input your list:</label>
+                <label for="data">e.g. [3,4,5,6] , [3,6,1,3,5], etc</label>
+                <input type="text" name="data" id="data" style="width: 400px" />
+                <input type="submit" value="submit" style="background-color: rgb(145, 180, 237)"/>
+            </div>
+            <div><label for="result">Input:</label></div>
+            <div>
+                <textarea  name="result" id="result" cols="90" rows="10" disabled="disabled" style="border:1px solid">{{content}}</textarea>
+            </div>
+            <div><label for="result">Output:</label></div>
+            <div>
+                <textarea name="result" id="result" cols="90" rows="10" disabled="disabled" style="border:1px solid">{{result}}</textarea>
+            </div>
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
+
+
